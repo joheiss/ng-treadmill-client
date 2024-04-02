@@ -1,0 +1,46 @@
+:host {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity-card {
+  color: lightgreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-size-small {
+    width: 200px;
+  }
+
+  &-size-large {
+    width: 420px;
+  }
+}
+
+.activity-card-title {
+  text-align: center;
+  font-size: small;
+}
+
+.activity-card-distance {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+  padding: 0;
+  padding-top: 8px;
+  margin: 0;
+}
+
+.activity-card-duration {
+  text-align: center;
+}
+
+.activity-card-weight {
+  text-align: center;
+  font-size: small;
+}

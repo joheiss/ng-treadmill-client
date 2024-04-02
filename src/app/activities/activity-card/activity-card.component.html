@@ -1,0 +1,18 @@
+<mat-card (click)="onClick(title)" data-testid="activity-card" class="activity-card activity-card-size-{{size}}">
+  <mat-card-header>
+    <mat-card-title data-testid="activity-card-title" class="activity-card-title">{{ title }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p data-testid="activity-card-distance" class="activity-card-distance">
+      {{ distance | number: '1.2-2' }} {{ distanceUoM }}
+    </p>
+    <p data-testid="activity-card-duration" class="activity-card-duration">
+      {{ duration | number: '1.0-0' }} {{ durationUoM }}
+    </p>
+    @if (showWeight) {
+    <p data-testid="activity-card-weight" class="activity-card-weight">
+      {{ weight | number: '1.1-1' }} {{ weightUoM }}
+    </p>
+    }
+  </mat-card-content>
+</mat-card>
